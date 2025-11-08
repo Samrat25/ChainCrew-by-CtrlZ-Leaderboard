@@ -683,49 +683,258 @@ h1 {
 /* ================================================================
    MOBILE RESPONSIVE STYLES
 ================================================================ */
-@media (max-width: 800px) {
-  #leaderboard {
-    width: 85vw;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
   }
 
+  #monthDisplay {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  #header {
+    padding: 8px 12px;
+    flex-wrap: nowrap;
+  }
+
+  #main {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+  }
+
+  #leaderboard {
+    width: 95vw;
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .leaderboard-header {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  /* Hide "Last Updated" column on mobile */
+  .header-time {
+    display: none;
+  }
+
+  .header-rank {
+    width: 45px;
+    min-width: 45px;
+  }
+
+  .header-name {
+    flex: 1;
+    min-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header-score {
+    width: 55px;
+    min-width: 55px;
+  }
+
+  .entry {
+    padding: 10px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+  }
+
+  /* Hide time column on mobile */
   .time {
-    width: 80px;
+    display: none;
+  }
+
+  .rank {
+    width: 45px;
+    min-width: 45px;
+    font-size: 1.2rem;
+  }
+
+  .name {
+    flex: 1;
+    min-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.95rem;
+  }
+
+  .score {
+    width: 55px;
+    min-width: 55px;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+
+  /* Disable heavy animations on mobile for better performance */
+  .top1,
+  .top2,
+  .top3 {
+    animation: slideInLeft 0.4s ease-out backwards;
+  }
+
+  #leaderboard::before {
+    animation: none;
+  }
+
+  body::before {
+    animation: none;
+    opacity: 0.5;
   }
 
   #logo {
-    padding: 6px 12px;
+    padding: 5px 10px;
     gap: 8px;
   }
 
   #logo-img {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
   }
 
   .ctrl-text {
-    font-size: 0.9rem;
-    padding: 2px 6px 2px 8px;
+    font-size: 0.85rem;
+    padding: 2px 6px 2px 7px;
   }
 
   .z-text {
-    font-size: 0.9rem;
-    padding: 2px 8px 2px 6px;
+    font-size: 0.85rem;
+    padding: 2px 7px 2px 6px;
   }
 
   .community-text {
-    font-size: 0.6rem;
-    letter-spacing: 1.5px;
+    font-size: 0.55rem;
+    letter-spacing: 1.2px;
   }
 
   #links {
-    display: flex;
-    gap: 10px;
-    list-style: none;
+    gap: 8px;
   }
 
   .social {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 5px;
+  }
+
+  #footer {
+    padding: 6px 12px;
+  }
+
+  #lastUpdated {
+    font-size: 0.75rem;
+  }
+}
+
+/* Extra small devices (phones in portrait, less than 400px) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+  }
+
+  #monthDisplay {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  #header {
+    padding: 6px 10px;
+  }
+
+  #main {
+    margin-top: 70px;
+    padding: 0 5px;
+  }
+
+  #leaderboard {
+    width: 98vw;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .leaderboard-header {
+    padding: 6px 8px;
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+  }
+
+  .header-rank {
+    width: 40px;
+    min-width: 40px;
+  }
+
+  .header-name {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .header-score {
+    width: 50px;
+    min-width: 50px;
+  }
+
+  .entry {
+    padding: 8px;
+    margin-bottom: 3px;
+  }
+
+  .rank {
+    width: 40px;
+    min-width: 40px;
+    font-size: 1.1rem;
+  }
+
+  .name {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 0.85rem;
+  }
+
+  .score {
+    width: 50px;
+    min-width: 50px;
+    font-size: 1rem;
+  }
+
+  #logo {
+    padding: 4px 8px;
+    gap: 6px;
+  }
+
+  #logo-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ctrl-text,
+  .z-text {
+    font-size: 0.75rem;
+    padding: 1px 5px;
+  }
+
+  .community-text {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  #links {
+    gap: 6px;
+  }
+
+  .social {
+    width: 22px;
+    height: 22px;
+  }
+
+  #lastUpdated {
+    font-size: 0.7rem;
   }
 }

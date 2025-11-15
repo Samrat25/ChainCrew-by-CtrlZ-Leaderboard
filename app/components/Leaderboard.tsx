@@ -9,18 +9,17 @@ interface LeaderboardEntry {
 
 // 🔥 MANUAL LEADERBOARD DATA - UPDATE THIS ARRAY TO CHANGE THE LEADERBOARD
 const LEADERBOARD_DATA: LeaderboardEntry[] = [
+  { name: 'Sucheta', points: 21 },
+  { name: 'Nightshade', points: 16 },
+  { name: 'Sayan Thakur', points: 14 },
+  { name: 'Sougato', points: 13 },
   { name: 'sg', points: 13 },
   { name: 'Ankit Kumar', points: 11 },
-  { name: 'Sucheta', points: 11 },
-  { name: 'Nightshade', points: 10 },
+  { name: 'Kingshuk', points: 9},
   { name: 'Divyam Jha', points: 9 },
   { name: 'Abhilash Palit', points: 9 },
-  { name: 'Sougato', points: 8 },
   { name: 'Samik', points: 8 },
-  { name: 'Prithwish', points: 7 },
-  { name: 'Sayan Thakur', points: 7 },
-  { name: 'Rohit Debnath', points: 6 },
-  { name: 'Anupam', points: 6 },
+
 ]
 
 export default function Leaderboard() {

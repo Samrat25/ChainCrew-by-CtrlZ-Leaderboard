@@ -8,9 +8,9 @@ interface Winner {
 
 // 🏆 SEASON 1 WINNERS - Top 3
 const SEASON_1_WINNERS: Winner[] = [
-  { rank: 1, name: 'sg', points: 13 },
-  { rank: 2, name: 'Sucheta', points: 11 },
-  { rank: 3, name: 'Ankit Kumar', points: 11 },
+  { rank: 1, name: 'Sucheta', points: 52 },
+  { rank: 2, name: 'Sayan Thakur', points: 35 },
+  { rank: 3, name: 'Debanjan & Kingshuk', points: 34 },
 ]
 
 export default function SeasonWinners() {
